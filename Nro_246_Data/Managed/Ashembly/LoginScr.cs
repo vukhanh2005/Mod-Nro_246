@@ -1,4 +1,5 @@
 using System;
+using System.IO;
 using UnityEngine;
 
 public class LoginScr : mScreen, IActionListener
@@ -289,7 +290,7 @@ public class LoginScr : mScreen, IActionListener
 
 	public override void switchToMe()
 	{
-		isRegistering = false;
+        isRegistering = false;
 		SoundMn.gI().stopAll();
 		tfUser.isFocus = true;
 		tfPass.isFocus = false;

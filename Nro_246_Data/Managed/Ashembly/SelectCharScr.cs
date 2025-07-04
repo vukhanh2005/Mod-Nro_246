@@ -259,9 +259,6 @@ public class SelectCharScr : mScreen, IActionListener
 	{
 		switch (idAction)
 		{
-		case 100:
-			GameCanvas.serverScreen.Login_New();
-			break;
 		case 101:
 			ServerListScreen.isAutoLogin = false;
 			GameCanvas.serverScreen.switchToMe();

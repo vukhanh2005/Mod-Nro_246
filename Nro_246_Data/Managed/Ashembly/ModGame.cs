@@ -6,6 +6,10 @@ public class ModGame
     public static bool isAutoAttackToggled = false;
     public static long lastAttackTime = 0;
     public static int currentSpeedGame = 1;
+    public static Char targetLocked_Char = null;
+    public static Mob targetLocked_Mob = null;
+    public static int idLocked = -1;
+    public static bool isLocked = false;
     private static bool IsTargetInRange(Char attacker, IMapObject target)
     {
         if (attacker == null || target == null)
@@ -60,7 +64,10 @@ public class ModGame
         //press k fo tdlt
         if (keyCode == 107)
         {
-            UseItemAt(521);
+            if(UseItemAt(521))
+            {
+                GameScr.isAutoPlay = true;
+            }
         }
         //press a de bat tu dong danh
         if (keyCode == 97)
@@ -86,6 +93,35 @@ public class ModGame
                 currentSpeedGame = 1;
             }
             setSpeedGame(currentSpeedGame);
+        }
+        //press 2
+        if(keyCode == 50)
+        {
+            isLocked = !isLocked;
+            if(isLocked == false)
+            {
+                targetLocked_Char = null;
+                targetLocked_Mob = null;
+                return;
+            }
+            targetLocked_Char = Char.myCharz().charFocus;
+            targetLocked_Mob = Char.myCharz().mobFocus;
+
+            if(targetLocked_Char == null && targetLocked_Mob == null)
+            {
+                isLocked = false;
+                return;
+            }
+            if(targetLocked_Char != null)
+            {
+                idLocked = Char.myCharz().charFocus.charID;
+                GameScr.info1.addInfo("Đã khóa: " + targetLocked_Char.cName, 0);
+            }
+            if(targetLocked_Mob != null)
+            {
+                idLocked = Char.myCharz().charFocus.charID;
+                GameScr.info1.addInfo("Đã khóa: " + targetLocked_Mob.mobName, 0);
+            }
         }
     }
     public static void Update()
@@ -155,12 +191,16 @@ public class ModGame
                 // else { GameCanvas.startOKDlg("DEBUG: Update - myChar is null."); }
             }
         }
+        if(isLocked)
+        {
+            LockTarget();
+        }
     }
     public static void setSpeedGame(int speed)
     {
         Time.timeScale = speed;
     }
-    public static void UseItemAt(int id)
+    public static bool UseItemAt(int id)
     {
 
         bool foundItem = false;
@@ -187,6 +227,7 @@ public class ModGame
         {
             GameScr.info1.addInfo("Not found id " + id, 0);
         }
+        return foundItem;
     }
 
     public static void pickItem()
@@ -214,5 +255,10 @@ public class ModGame
         {
             //GameScr.info1.addInfo("Không tìm thấy vật phẩm có ID " + idItem + " để nhặt.", 0);
         }
+    }
+    public static void LockTarget()
+    {
+        Char.myCharz().mobFocus = targetLocked_Mob;
+        Char.myCharz().charFocus = targetLocked_Char;
     }
 }
