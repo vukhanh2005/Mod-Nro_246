@@ -1,6 +1,6 @@
 is_global = true
 build_property.RootNamespace = Assembly-CSharp
-build_property.ProjectDir = C:\Users\trauv\NVK\MOD\DragonBoy246\Nro_246_Data\Managed\Ashembly\
+build_property.ProjectDir = C:\Users\trauv\Desktop\Mod-Nro_246\Nro_246_Data\Managed\Ashembly\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.CsWinRTUseWindowsUIXamlProjections = false

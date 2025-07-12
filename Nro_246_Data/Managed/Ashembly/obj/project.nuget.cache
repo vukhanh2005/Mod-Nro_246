@@ -1,11 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uK/wSQjQIHY=",
+  "dgSpecHash": "zIPC8LLlDkM=",
   "success": true,
-  "projectFilePath": "C:\\Users\\trauv\\NVK\\MOD\\DragonBoy246\\Nro_246_Data\\Managed\\Ashembly\\Assembly-CSharp.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\trauv\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.3\\microsoft.netframework.referenceassemblies.1.0.3.nupkg.sha512",
-    "C:\\Users\\trauv\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net35\\1.0.3\\microsoft.netframework.referenceassemblies.net35.1.0.3.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\trauv\\Desktop\\Mod-Nro_246\\Nro_246_Data\\Managed\\Ashembly\\Assembly-CSharp.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

@@ -1,61 +1,57 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\trauv\\NVK\\MOD\\DragonBoy246\\Nro_246_Data\\Managed\\Ashembly\\",
+  "WorkspaceRootPath": "C:\\Users\\trauv\\Desktop\\Mod-Nro_246\\Nro_246_Data\\Managed\\Ashembly\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\trauv\\nvk\\mod\\dragonboy246\\nro_246_data\\managed\\ashembly\\modgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\trauv\\desktop\\mod-nro_246\\nro_246_data\\managed\\ashembly\\modgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:modgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\trauv\\nvk\\mod\\dragonboy246\\nro_246_data\\managed\\ashembly\\loginscr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:loginscr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\trauv\\nvk\\mod\\dragonboy246\\nro_246_data\\managed\\ashembly\\char.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\trauv\\desktop\\mod-nro_246\\nro_246_data\\managed\\ashembly\\char.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:char.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\trauv\\nvk\\mod\\dragonboy246\\nro_246_data\\managed\\ashembly\\assembly-csharp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assembly-csharp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\trauv\\desktop\\mod-nro_246\\nro_246_data\\managed\\ashembly\\loginscr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:loginscr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\trauv\\nvk\\mod\\dragonboy246\\nro_246_data\\managed\\ashembly\\serverlistscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\trauv\\desktop\\mod-nro_246\\nro_246_data\\managed\\ashembly\\serverlistscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:serverlistscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\trauv\\nvk\\mod\\dragonboy246\\nro_246_data\\managed\\ashembly\\controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\trauv\\desktop\\mod-nro_246\\nro_246_data\\managed\\ashembly\\controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\trauv\\nvk\\mod\\dragonboy246\\nro_246_data\\managed\\ashembly\\gamecanvas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\trauv\\desktop\\mod-nro_246\\nro_246_data\\managed\\ashembly\\gamecanvas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:gamecanvas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\trauv\\nvk\\mod\\dragonboy246\\nro_246_data\\managed\\ashembly\\selectcharscr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\trauv\\desktop\\mod-nro_246\\nro_246_data\\managed\\ashembly\\selectcharscr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:selectcharscr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\trauv\\nvk\\mod\\dragonboy246\\nro_246_data\\managed\\ashembly\\gamescr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\trauv\\desktop\\mod-nro_246\\nro_246_data\\managed\\ashembly\\gamescr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:gamescr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\trauv\\nvk\\mod\\dragonboy246\\nro_246_data\\managed\\ashembly\\imapobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\trauv\\desktop\\mod-nro_246\\nro_246_data\\managed\\ashembly\\imapobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:imapobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\trauv\\nvk\\mod\\dragonboy246\\nro_246_data\\managed\\ashembly\\itemmap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\trauv\\desktop\\mod-nro_246\\nro_246_data\\managed\\ashembly\\itemmap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:itemmap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\trauv\\nvk\\mod\\dragonboy246\\nro_246_data\\managed\\ashembly\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\trauv\\desktop\\mod-nro_246\\nro_246_data\\managed\\ashembly\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\trauv\\nvk\\mod\\dragonboy246\\nro_246_data\\managed\\ashembly\\assets.src.g\\mabu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\trauv\\desktop\\mod-nro_246\\nro_246_data\\managed\\ashembly\\assets.src.g\\mabu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets.src.g\\mabu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\trauv\\nvk\\mod\\dragonboy246\\nro_246_data\\managed\\ashembly\\service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\trauv\\desktop\\mod-nro_246\\nro_246_data\\managed\\ashembly\\service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -72,11 +68,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "ModGame.cs",
-              "DocumentMoniker": "C:\\Users\\trauv\\NVK\\MOD\\DragonBoy246\\Nro_246_Data\\Managed\\Ashembly\\ModGame.cs",
+              "DocumentMoniker": "C:\\Users\\trauv\\Desktop\\Mod-Nro_246\\Nro_246_Data\\Managed\\Ashembly\\ModGame.cs",
               "RelativeDocumentMoniker": "ModGame.cs",
-              "ToolTip": "C:\\Users\\trauv\\NVK\\MOD\\DragonBoy246\\Nro_246_Data\\Managed\\Ashembly\\ModGame.cs",
+              "ToolTip": "C:\\Users\\trauv\\Desktop\\Mod-Nro_246\\Nro_246_Data\\Managed\\Ashembly\\ModGame.cs",
               "RelativeToolTip": "ModGame.cs",
-              "ViewState": "AgIAADcAAAAAAAAAAAAQwEMAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-04T00:28:35.872Z",
               "EditorCaption": ""
@@ -84,34 +80,10 @@
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "SelectCharScr.cs",
-              "DocumentMoniker": "C:\\Users\\trauv\\NVK\\MOD\\DragonBoy246\\Nro_246_Data\\Managed\\Ashembly\\SelectCharScr.cs",
-              "RelativeDocumentMoniker": "SelectCharScr.cs",
-              "ToolTip": "C:\\Users\\trauv\\NVK\\MOD\\DragonBoy246\\Nro_246_Data\\Managed\\Ashembly\\SelectCharScr.cs",
-              "RelativeToolTip": "SelectCharScr.cs",
-              "ViewState": "AgIAAPgAAAAAAAAAAAAgwA0BAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T11:31:18.76Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ServerListScreen.cs",
-              "DocumentMoniker": "C:\\Users\\trauv\\NVK\\MOD\\DragonBoy246\\Nro_246_Data\\Managed\\Ashembly\\ServerListScreen.cs",
-              "RelativeDocumentMoniker": "ServerListScreen.cs",
-              "ToolTip": "C:\\Users\\trauv\\NVK\\MOD\\DragonBoy246\\Nro_246_Data\\Managed\\Ashembly\\ServerListScreen.cs",
-              "RelativeToolTip": "ServerListScreen.cs",
-              "ViewState": "AgIAAO4CAAAAAAAAAIAwwPgCAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T11:30:23.469Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
               "Title": "GameScr.cs",
-              "DocumentMoniker": "C:\\Users\\trauv\\NVK\\MOD\\DragonBoy246\\Nro_246_Data\\Managed\\Ashembly\\GameScr.cs",
+              "DocumentMoniker": "C:\\Users\\trauv\\Desktop\\Mod-Nro_246\\Nro_246_Data\\Managed\\Ashembly\\GameScr.cs",
               "RelativeDocumentMoniker": "GameScr.cs",
-              "ToolTip": "C:\\Users\\trauv\\NVK\\MOD\\DragonBoy246\\Nro_246_Data\\Managed\\Ashembly\\GameScr.cs",
+              "ToolTip": "C:\\Users\\trauv\\Desktop\\Mod-Nro_246\\Nro_246_Data\\Managed\\Ashembly\\GameScr.cs",
               "RelativeToolTip": "GameScr.cs",
               "ViewState": "AgIAAIkEAAAAAAAAAAAWwDMEAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -119,24 +91,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Char.cs",
-              "DocumentMoniker": "C:\\Users\\trauv\\NVK\\MOD\\DragonBoy246\\Nro_246_Data\\Managed\\Ashembly\\Char.cs",
+              "DocumentMoniker": "C:\\Users\\trauv\\Desktop\\Mod-Nro_246\\Nro_246_Data\\Managed\\Ashembly\\Char.cs",
               "RelativeDocumentMoniker": "Char.cs",
-              "ToolTip": "C:\\Users\\trauv\\NVK\\MOD\\DragonBoy246\\Nro_246_Data\\Managed\\Ashembly\\Char.cs",
+              "ToolTip": "C:\\Users\\trauv\\Desktop\\Mod-Nro_246\\Nro_246_Data\\Managed\\Ashembly\\Char.cs",
               "RelativeToolTip": "Char.cs",
-              "ViewState": "AgIAAA4GAAAAAAAAAIAwwB4GAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAJAAAAAAAAAAAAD4v50AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-03T09:14:14.134Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 11,
               "Title": "Mabu.cs",
-              "DocumentMoniker": "C:\\Users\\trauv\\NVK\\MOD\\DragonBoy246\\Nro_246_Data\\Managed\\Ashembly\\Assets.src.g\\Mabu.cs",
+              "DocumentMoniker": "C:\\Users\\trauv\\Desktop\\Mod-Nro_246\\Nro_246_Data\\Managed\\Ashembly\\Assets.src.g\\Mabu.cs",
               "RelativeDocumentMoniker": "Assets.src.g\\Mabu.cs",
-              "ToolTip": "C:\\Users\\trauv\\NVK\\MOD\\DragonBoy246\\Nro_246_Data\\Managed\\Ashembly\\Assets.src.g\\Mabu.cs",
+              "ToolTip": "C:\\Users\\trauv\\Desktop\\Mod-Nro_246\\Nro_246_Data\\Managed\\Ashembly\\Assets.src.g\\Mabu.cs",
               "RelativeToolTip": "Assets.src.g\\Mabu.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -144,11 +116,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 12,
               "Title": "Service.cs",
-              "DocumentMoniker": "C:\\Users\\trauv\\NVK\\MOD\\DragonBoy246\\Nro_246_Data\\Managed\\Ashembly\\Service.cs",
+              "DocumentMoniker": "C:\\Users\\trauv\\Desktop\\Mod-Nro_246\\Nro_246_Data\\Managed\\Ashembly\\Service.cs",
               "RelativeDocumentMoniker": "Service.cs",
-              "ToolTip": "C:\\Users\\trauv\\NVK\\MOD\\DragonBoy246\\Nro_246_Data\\Managed\\Ashembly\\Service.cs",
+              "ToolTip": "C:\\Users\\trauv\\Desktop\\Mod-Nro_246\\Nro_246_Data\\Managed\\Ashembly\\Service.cs",
               "RelativeToolTip": "Service.cs",
               "ViewState": "AgIAACAGAAAAAAAAAAAlwPYFAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -156,11 +128,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "Controller.cs",
-              "DocumentMoniker": "C:\\Users\\trauv\\NVK\\MOD\\DragonBoy246\\Nro_246_Data\\Managed\\Ashembly\\Controller.cs",
+              "DocumentMoniker": "C:\\Users\\trauv\\Desktop\\Mod-Nro_246\\Nro_246_Data\\Managed\\Ashembly\\Controller.cs",
               "RelativeDocumentMoniker": "Controller.cs",
-              "ToolTip": "C:\\Users\\trauv\\NVK\\MOD\\DragonBoy246\\Nro_246_Data\\Managed\\Ashembly\\Controller.cs",
+              "ToolTip": "C:\\Users\\trauv\\Desktop\\Mod-Nro_246\\Nro_246_Data\\Managed\\Ashembly\\Controller.cs",
               "RelativeToolTip": "Controller.cs",
               "ViewState": "AgIAAHkAAAAAAAAAAIAwwJAAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -168,36 +140,47 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "LoginScr.cs",
-              "DocumentMoniker": "C:\\Users\\trauv\\NVK\\MOD\\DragonBoy246\\Nro_246_Data\\Managed\\Ashembly\\LoginScr.cs",
+              "DocumentMoniker": "C:\\Users\\trauv\\Desktop\\Mod-Nro_246\\Nro_246_Data\\Managed\\Ashembly\\LoginScr.cs",
               "RelativeDocumentMoniker": "LoginScr.cs",
-              "ToolTip": "C:\\Users\\trauv\\NVK\\MOD\\DragonBoy246\\Nro_246_Data\\Managed\\Ashembly\\LoginScr.cs",
+              "ToolTip": "C:\\Users\\trauv\\Desktop\\Mod-Nro_246\\Nro_246_Data\\Managed\\Ashembly\\LoginScr.cs",
               "RelativeToolTip": "LoginScr.cs",
               "ViewState": "AgIAAKoBAAAAAAAAAIA7wMYBAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-02T12:17:27.414Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-02T12:17:27.414Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Assembly-CSharp.csproj",
-              "DocumentMoniker": "C:\\Users\\trauv\\NVK\\MOD\\DragonBoy246\\Nro_246_Data\\Managed\\Ashembly\\Assembly-CSharp.csproj",
-              "RelativeDocumentMoniker": "Assembly-CSharp.csproj",
-              "ToolTip": "C:\\Users\\trauv\\NVK\\MOD\\DragonBoy246\\Nro_246_Data\\Managed\\Ashembly\\Assembly-CSharp.csproj",
-              "RelativeToolTip": "Assembly-CSharp.csproj",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAswBIAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-07-03T14:48:24.634Z"
+              "Title": "ServerListScreen.cs",
+              "DocumentMoniker": "C:\\Users\\trauv\\Desktop\\Mod-Nro_246\\Nro_246_Data\\Managed\\Ashembly\\ServerListScreen.cs",
+              "RelativeDocumentMoniker": "ServerListScreen.cs",
+              "ToolTip": "C:\\Users\\trauv\\Desktop\\Mod-Nro_246\\Nro_246_Data\\Managed\\Ashembly\\ServerListScreen.cs",
+              "RelativeToolTip": "ServerListScreen.cs",
+              "ViewState": "AgIAAO4CAAAAAAAAAIAwwPgCAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-03T11:30:23.469Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "SelectCharScr.cs",
+              "DocumentMoniker": "C:\\Users\\trauv\\Desktop\\Mod-Nro_246\\Nro_246_Data\\Managed\\Ashembly\\SelectCharScr.cs",
+              "RelativeDocumentMoniker": "SelectCharScr.cs",
+              "ToolTip": "C:\\Users\\trauv\\Desktop\\Mod-Nro_246\\Nro_246_Data\\Managed\\Ashembly\\SelectCharScr.cs",
+              "RelativeToolTip": "SelectCharScr.cs",
+              "ViewState": "AgIAAPgAAAAAAAAAAAAgwA0BAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-03T11:31:18.76Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "GameCanvas.cs",
-              "DocumentMoniker": "C:\\Users\\trauv\\NVK\\MOD\\DragonBoy246\\Nro_246_Data\\Managed\\Ashembly\\GameCanvas.cs",
+              "DocumentMoniker": "C:\\Users\\trauv\\Desktop\\Mod-Nro_246\\Nro_246_Data\\Managed\\Ashembly\\GameCanvas.cs",
               "RelativeDocumentMoniker": "GameCanvas.cs",
-              "ToolTip": "C:\\Users\\trauv\\NVK\\MOD\\DragonBoy246\\Nro_246_Data\\Managed\\Ashembly\\GameCanvas.cs",
+              "ToolTip": "C:\\Users\\trauv\\Desktop\\Mod-Nro_246\\Nro_246_Data\\Managed\\Ashembly\\GameCanvas.cs",
               "RelativeToolTip": "GameCanvas.cs",
               "ViewState": "AgIAAA0CAAAAAAAAAAAQwBsCAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -205,11 +188,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 8,
               "Title": "IMapObject.cs",
-              "DocumentMoniker": "C:\\Users\\trauv\\NVK\\MOD\\DragonBoy246\\Nro_246_Data\\Managed\\Ashembly\\IMapObject.cs",
+              "DocumentMoniker": "C:\\Users\\trauv\\Desktop\\Mod-Nro_246\\Nro_246_Data\\Managed\\Ashembly\\IMapObject.cs",
               "RelativeDocumentMoniker": "IMapObject.cs",
-              "ToolTip": "C:\\Users\\trauv\\NVK\\MOD\\DragonBoy246\\Nro_246_Data\\Managed\\Ashembly\\IMapObject.cs",
+              "ToolTip": "C:\\Users\\trauv\\Desktop\\Mod-Nro_246\\Nro_246_Data\\Managed\\Ashembly\\IMapObject.cs",
               "RelativeToolTip": "IMapObject.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -217,11 +200,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 10,
               "Title": "Item.cs",
-              "DocumentMoniker": "C:\\Users\\trauv\\NVK\\MOD\\DragonBoy246\\Nro_246_Data\\Managed\\Ashembly\\Item.cs",
+              "DocumentMoniker": "C:\\Users\\trauv\\Desktop\\Mod-Nro_246\\Nro_246_Data\\Managed\\Ashembly\\Item.cs",
               "RelativeDocumentMoniker": "Item.cs",
-              "ToolTip": "C:\\Users\\trauv\\NVK\\MOD\\DragonBoy246\\Nro_246_Data\\Managed\\Ashembly\\Item.cs",
+              "ToolTip": "C:\\Users\\trauv\\Desktop\\Mod-Nro_246\\Nro_246_Data\\Managed\\Ashembly\\Item.cs",
               "RelativeToolTip": "Item.cs",
               "ViewState": "AgIAABkBAAAAAAAAAAAgwOMAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -229,11 +212,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 9,
               "Title": "ItemMap.cs",
-              "DocumentMoniker": "C:\\Users\\trauv\\NVK\\MOD\\DragonBoy246\\Nro_246_Data\\Managed\\Ashembly\\ItemMap.cs",
+              "DocumentMoniker": "C:\\Users\\trauv\\Desktop\\Mod-Nro_246\\Nro_246_Data\\Managed\\Ashembly\\ItemMap.cs",
               "RelativeDocumentMoniker": "ItemMap.cs",
-              "ToolTip": "C:\\Users\\trauv\\NVK\\MOD\\DragonBoy246\\Nro_246_Data\\Managed\\Ashembly\\ItemMap.cs",
+              "ToolTip": "C:\\Users\\trauv\\Desktop\\Mod-Nro_246\\Nro_246_Data\\Managed\\Ashembly\\ItemMap.cs",
               "RelativeToolTip": "ItemMap.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAlwBQAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
