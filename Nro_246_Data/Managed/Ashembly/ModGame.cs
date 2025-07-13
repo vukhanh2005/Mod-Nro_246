@@ -11,6 +11,8 @@ public class ModGame
     public static int idLocked = -1;
     public static bool isLocked = false;
     public static bool isANhat = false;
+    public static MyVector itemInMap;
+    public static float distancePickItem = 10; //Khoảng cách player sẽ nhặt item
     private static bool IsTargetInRange(Char attacker, IMapObject target)
     {
         if (attacker == null || target == null)
@@ -129,6 +131,19 @@ public class ModGame
         if(keyCode == 110)
         {
             isANhat = !isANhat;
+            if(isANhat)
+            {
+                GameScr.info1.addInfo("Đã bật auto nhặt", 0);
+            }
+            if(!isANhat)
+            {
+                GameScr.info1.addInfo("Đã tắt auto nhặt", 0);
+            }
+        }
+        //press space de an dau than
+        if(keyCode == 32)
+        {
+            GameScr.instance.doUseHP();
         }
     }
     public static void Update()
@@ -143,6 +158,10 @@ public class ModGame
             {
                 isANhat = false;
             }
+        }
+        else
+        {
+            itemInMap = GameScr.vItemMap;
         }
         if (isANhat)
         {
@@ -193,7 +212,31 @@ public class ModGame
 
     public static void PickItem()
     {
-       
+        // Nếu không có vật phẩm nào trên bản đồ thì không làm gì cả
+        if (GameScr.vItemMap == null || GameScr.vItemMap.size() == 0)
+            return;
+
+        // Lặp qua tất cả các vật phẩm trên bản đồ
+        for (int i = 0; i < GameScr.vItemMap.size(); i++)
+        {
+            ItemMap itemMap = (ItemMap)GameScr.vItemMap.elementAt(i);
+
+            // Chỉ nhặt vật phẩm của mình hoặc vật phẩm rơi tự do (playerId == -1)
+            if (itemMap != null && (itemMap.playerId == Char.myCharz().charID || itemMap.playerId == -1))
+            {
+                // Tính khoảng cách từ nhân vật đến vật phẩm
+                int distance = Res.distance(Char.myCharz().cx, Char.myCharz().cy, itemMap.x, itemMap.y);
+                // Nếu đủ gần...
+                if (distance < distancePickItem)
+                {
+                    // GỬI YÊU CẦU NHẶT ĐỒ LÊN SERVER
+                    Service.gI().pickItem(itemMap.itemMapID);
+
+                    // Thoát khỏi vòng lặp ngay sau khi nhặt 1 vật phẩm để tránh spam server
+                    break;
+                }
+            }
+        }
     }
     public static void LockTarget()
     {
