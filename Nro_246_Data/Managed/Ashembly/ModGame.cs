@@ -68,6 +68,7 @@ public class ModGame
             if(UseItemAt(521))
             {
                 GameScr.isAutoPlay = true;
+                Service.gI().sendPlayerAttack(GameScr.vMob, null, 0);
             }
         }
         //press a de bat tu dong danh
@@ -134,24 +135,24 @@ public class ModGame
     {
         if (Char.myCharz().isDie)
         {
-            if(isAutoAttackToggled)
+            if (isAutoAttackToggled)
             {
                 isAutoAttackToggled = false;
             }
-            if(isANhat)
+            if (isANhat)
             {
                 isANhat = false;
             }
         }
-        if(isANhat)
+        if (isANhat)
         {
-            //PickItem();
+            PickItem();
         }
         if (isAutoAttackToggled)
         {
             AutoAttack();
         }
-        if(isLocked)
+        if (isLocked)
         {
             LockTarget();
         }
@@ -192,23 +193,7 @@ public class ModGame
 
     public static void PickItem()
     {
-        MyVector items = GameScr.vItemMap;
-        if(items.size() == 0)
-        {
-            return;
-        }
-        for (int i = 0; i < items.size(); i++)
-        {
-            ItemMap itemMap = (ItemMap)items.elementAt(i);
-            if (itemMap != null && itemMap.template != null)
-            {
-                // Check if the item is pickable (playerId is 0 for general drops, or matches current player's ID)
-                if (itemMap.playerId == 0 || itemMap.playerId == Char.myCharz().charID)
-                {
-                    Service.gI().pickItem(itemMap.itemMapID);
-                }
-            }
-        }
+       
     }
     public static void LockTarget()
     {
@@ -217,52 +202,56 @@ public class ModGame
     }
     public static void AutoAttack()
     {
-        long currentTime = mSystem.currentTimeMillis();
-        int attackCooldown = 100;
+        // Nếu chức năng không được bật, hoặc nhân vật không tồn tại/đã chết, thì không làm gì cả
+        if (!isAutoAttackToggled || Char.myCharz() == null || Char.myCharz().isDie)
+            return;
 
-        if (currentTime - lastAttackTime >= attackCooldown)
+        // Lấy kỹ năng đang được chọn
+        Skill currentSkill = Char.myCharz().myskill;
+        if (currentSkill == null)
+            return; // Không có kỹ năng nào được chọn
+
+        // Kiểm tra thời gian hồi chiêu. Nếu chưa hồi xong thì không làm gì cả.
+        if (mSystem.currentTimeMillis() - currentSkill.lastTimeUseThisSkill < currentSkill.coolDown)
+            return;
+
+        // Xác định mục tiêu hiện tại (ưu tiên quái vật)
+        IMapObject target = (IMapObject)Char.myCharz().mobFocus ?? (IMapObject)Char.myCharz().charFocus;
+
+        // Nếu không có mục tiêu, không làm gì cả
+        if (target == null)
+            return;
+
+        // Kiểm tra xem mục tiêu có hợp lệ để tấn công không (còn sống)
+        if (target is Mob mobTarget && (mobTarget.hp <= 0 || mobTarget.status == 1 || mobTarget.status == 0))
+            return; // Quái đã chết
+
+        if (target is Char charTarget && charTarget.isDie)
+            return; // Người chơi đã chết
+
+        // Kiểm tra xem mục tiêu có trong tầm đánh không. Nếu không, không làm gì cả (không di chuyển).
+        if (!IsTargetInRange(Char.myCharz(), target))
+            return;
+
+        // --- Nếu tất cả điều kiện đều thỏa mãn, thực hiện tấn công "im lặng" ---
+
+        // 1. Chuẩn bị các vector chứa mục tiêu để gửi đi
+        MyVector vMob = new MyVector();
+        MyVector vChar = new MyVector();
+        if (target is Mob) vMob.addElement(target);
+        if (target is Char) vChar.addElement(target);
+
+        // 2. Gửi trực tiếp gói tin tấn công lên máy chủ mà không thay đổi trạng thái nhân vật
+        if (vMob.size() > 0 || vChar.size() > 0)
         {
-            Char myChar = Char.myCharz();
-            if (myChar != null)
-            {
-                if (myChar.myskill != null)
-                {
-                    if (myChar.myskill.template.isAttackSkill())
-                    {
-                        IMapObject target = null;
+            Service.gI().sendPlayerAttack(vMob, vChar, 1);
 
-                        if (myChar.mobFocus != null)
-                        {
-                            target = myChar.mobFocus;
-                        }
-                        else if (myChar.charFocus != null && myChar.isMeCanAttackOtherPlayer(myChar.charFocus))
-                        {
-                            target = myChar.charFocus;
-                        }
-
-                        if (target != null)
-                        {
-                            if (IsTargetInRange(myChar, target))
-                            {
-                                MyVector vMob = new MyVector();
-                                MyVector vChar = new MyVector();
-
-                                if (target is Mob)
-                                {
-                                    vMob.addElement(target);
-                                }
-                                else if (target is Char)
-                                {
-                                    vChar.addElement(target);
-                                }
-
-                                Service.gI().sendPlayerAttack(vMob, vChar, 1);
-                                lastAttackTime = currentTime;
-                            }
-                        }
-                    }
-                }
-            }
+            // 3. Cập nhật lại thời gian sử dụng kỹ năng ở phía client để bắt đầu đếm ngược cooldown
+            currentSkill.lastTimeUseThisSkill = mSystem.currentTimeMillis();
+        }
+        else
+        {
+            GameScr.info1.addInfo("Nothing", 0);
         }
     }
 }
