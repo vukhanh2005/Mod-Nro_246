@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:modgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\trauv\\desktop\\mod-nro_246\\nro_246_data\\managed\\ashembly\\gamecanvas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:gamecanvas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\trauv\\desktop\\mod-nro_246\\nro_246_data\\managed\\ashembly\\gamescr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:gamescr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\trauv\\desktop\\mod-nro_246\\nro_246_data\\managed\\ashembly\\gamecanvas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:gamecanvas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\trauv\\desktop\\mod-nro_246\\nro_246_data\\managed\\ashembly\\assets.src.g\\mabu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -60,7 +60,7 @@
               "RelativeDocumentMoniker": "ModGame.cs",
               "ToolTip": "C:\\Users\\trauv\\Desktop\\Mod-Nro_246\\Nro_246_Data\\Managed\\Ashembly\\ModGame.cs",
               "RelativeToolTip": "ModGame.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAwBMAAABLAAAAAAAAAA==",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAYwJYAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-04T00:28:35.872Z",
               "EditorCaption": ""
@@ -115,26 +115,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "GameCanvas.cs",
               "DocumentMoniker": "C:\\Users\\trauv\\Desktop\\Mod-Nro_246\\Nro_246_Data\\Managed\\Ashembly\\GameCanvas.cs",
               "RelativeDocumentMoniker": "GameCanvas.cs",
               "ToolTip": "C:\\Users\\trauv\\Desktop\\Mod-Nro_246\\Nro_246_Data\\Managed\\Ashembly\\GameCanvas.cs",
               "RelativeToolTip": "GameCanvas.cs",
-              "ViewState": "AgIAAJYIAAAAAAAAAAAewGkIAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAFICAAAAAAAAAAD4vxsCAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-02T14:14:45.821Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "GameScr.cs",
               "DocumentMoniker": "C:\\Users\\trauv\\Desktop\\Mod-Nro_246\\Nro_246_Data\\Managed\\Ashembly\\GameScr.cs",
               "RelativeDocumentMoniker": "GameScr.cs",
               "ToolTip": "C:\\Users\\trauv\\Desktop\\Mod-Nro_246\\Nro_246_Data\\Managed\\Ashembly\\GameScr.cs",
               "RelativeToolTip": "GameScr.cs",
-              "ViewState": "AgIAAA4PAAAAAAAAAIAwwCAPAAADAAAAAAAAAA==",
+              "ViewState": "AgIAAH0RAAAAAAAAAAD4v5MRAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-03T09:53:53.839Z",
               "EditorCaption": ""

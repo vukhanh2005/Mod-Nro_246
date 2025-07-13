@@ -145,6 +145,14 @@ public class ModGame
         {
             GameScr.instance.doUseHP();
         }
+        //press c de mo capsule
+        if(keyCode == 99)
+        {
+            if (UseItemAt(193)) //id capsule thuong la 193
+            {
+                GameScr.info1.addInfo("Đã sử dụng capsu", 0);
+            }
+        }
     }
     public static void Update()
     {
@@ -182,7 +190,6 @@ public class ModGame
     }
     public static bool UseItemAt(int id)
     {
-
         bool foundItem = false;
         int foundItemIndex = -1;
         if (Char.myCharz() != null && Char.myCharz().arrItemBag != null)

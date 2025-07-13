@@ -535,7 +535,7 @@ public class GameCanvas : IActionListener
 
 	public void update()
 	{
-        ModGame.Update();
+        //ModGame.Update();
         if (currentScreen == _SelectCharScr)
 		{
 			if (gameTick % 2 == 0 && SmallImage.vt_images_watingDowload.size() > 0)
