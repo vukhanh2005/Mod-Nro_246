@@ -16,7 +16,6 @@ public class GameScr : mScreen, IChatable
 	public static bool isLoadAllData = false;
 
 	public static GameScr instance;
-
 	public static int gW;
 
 	public static int gH;
@@ -5385,20 +5384,21 @@ public class GameScr : mScreen, IChatable
 		paint_xp_bar(g);
 		if (!isPaintOther)
 		{
-			if (GameCanvas.open3Hour && TileMap.mapID != 170)
-			{
-				if (GameCanvas.w > 250)
-				{
-					g.drawImage(GameCanvas.img18, 160, 6, 0);
-					mFont.tahoma_7_white.drawString(g, "Chơi quá 180 phút một ngày ", 180, 2, 0);
-					mFont.tahoma_7_white.drawString(g, "sẽ ảnh hưởng xấu đến sức khỏe.", 180, 12, 0);
-				}
-				else
-				{
-					g.drawImage(GameCanvas.img18, 5, GameCanvas.h - 67, 0);
-					mFont.tahoma_7_white.drawString(g, "Chơi quá 180 phút một ngày sẽ ảnh hưởng xấu đến sức khỏe.", 25, GameCanvas.h - 70, 0);
-				}
-			}
+			ModGame.DrawText(g);
+			//if (GameCanvas.open3Hour && TileMap.mapID != 170)
+			//{
+			//	if (GameCanvas.w > 250)
+			//	{
+			//		g.drawImage(GameCanvas.img18, 160, 6, 0);
+			//		mFont.tahoma_7_white.drawString(g, "Chơi quá 180 phút một ngày ", 180, 2, 0);
+			//		mFont.tahoma_7_white.drawString(g, "sẽ ảnh hưởng xấu đến sức khỏe.", 180, 12, 0);
+			//	}
+			//	else
+			//	{
+			//		g.drawImage(GameCanvas.img18, 5, GameCanvas.h - 67, 0);
+			//		mFont.tahoma_7_white.drawString(g, "Chơi quá 180 phút một ngày sẽ ảnh hưởng xấu đến sức khỏe.", 25, GameCanvas.h - 70, 0);
+			//	}
+			//}
 			GameCanvas.debug("PA21", 1);
 			GameCanvas.debug("PA18", 1);
 			g.translate(-g.getTranslateX(), -g.getTranslateY());

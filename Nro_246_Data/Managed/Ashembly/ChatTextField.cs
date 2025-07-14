@@ -1,5 +1,6 @@
 public class ChatTextField : IActionListener
 {
+	public bool isChatting;
 	private static ChatTextField instance;
 
 	public TField tfChat;
@@ -42,6 +43,7 @@ public class ChatTextField : IActionListener
 
 	public ChatTextField()
 	{
+		isChatting = false;
 		tfChat = new TField();
 		if (Main.isWindowsPhone)
 		{
@@ -158,6 +160,7 @@ public class ChatTextField : IActionListener
 
 	public void startChat(int firstCharacter, IChatable parentScreen, string to)
 	{
+		isChatting = true;
 		right.caption = mResources.CLOSE;
 		this.to = to;
 		if (Main.isWindowsPhone)
@@ -178,6 +181,7 @@ public class ChatTextField : IActionListener
 
 	public void startChat(IChatable parentScreen, string to)
 	{
+		isChatting = true;
 		right.caption = mResources.CLOSE;
 		this.to = to;
 		if (Main.isWindowsPhone)
@@ -205,6 +209,7 @@ public class ChatTextField : IActionListener
 
 	public void startChat2(IChatable parentScreen, string to)
 	{
+		isChatting = true;
 		tfChat.setFocusWithKb(isFocus: true);
 		this.to = to;
 		this.parentScreen = parentScreen;
@@ -303,6 +308,7 @@ public class ChatTextField : IActionListener
 		switch (idAction)
 		{
 		case 8000:
+			isChatting = false;
 			Cout.LogError("perform chat 8000");
 			if (parentScreen != null)
 			{

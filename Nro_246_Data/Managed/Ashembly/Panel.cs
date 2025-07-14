@@ -9361,29 +9361,34 @@ public class Panel : IActionListener, IChatable
 		{
 			Res.outz("nhan do");
 			Service.gI().buyItem(0, selected, 0);
+			GameScr.info1.addInfo("BUY ITEM -1", 0);
 		}
 		if (idAction == 30002)
 		{
 			Res.outz("xoa do");
-			Service.gI().buyItem(1, selected, 0);
+            GameScr.info1.addInfo("BUY ITEM 0", 0);
+            Service.gI().buyItem(1, selected, 0);
 		}
 		if (idAction == 30003)
 		{
 			Res.outz("nhan tat");
-			Service.gI().buyItem(2, selected, 0);
+            GameScr.info1.addInfo("BUY ITEM 1", 0);
+            Service.gI().buyItem(2, selected, 0);
 		}
 		if (idAction == 3000)
 		{
 			Res.outz("mua do");
 			Item item10 = (Item)p;
 			Service.gI().buyItem(0, item10.template.id, 0);
-		}
+			GameScr.info1.addInfo("Buy item with id: " + item10.template.id, 0);
+        }
 		if (idAction == 3001)
 		{
 			Item item11 = (Item)p;
 			GameCanvas.msgdlg.pleasewait();
 			Service.gI().buyItem(1, item11.template.id, 0);
-		}
+            GameScr.info1.addInfo("BUY ITEM 3", 0);
+        }
 		if (idAction == 3002)
 		{
 			GameCanvas.endDlg();
@@ -9402,13 +9407,15 @@ public class Panel : IActionListener, IChatable
 		{
 			Item item12 = (Item)p;
 			Service.gI().buyItem(3, item12.template.id, 0);
-		}
+            GameScr.info1.addInfo("BUY ITEM 4", 0);
+        }
 		if (idAction == 3005)
 		{
 			Res.outz("mua do");
 			Item item13 = (Item)p;
 			Service.gI().buyItem(3, item13.template.id, 0);
-		}
+            GameScr.info1.addInfo("BUY ITEM 5", 0);
+        }
 		if (idAction == 4000)
 		{
 			Clan clan = (Clan)p;

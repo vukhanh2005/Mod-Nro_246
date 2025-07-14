@@ -84,6 +84,7 @@ public class Main : MonoBehaviour
 
 	private void Start()
 	{
+		ModGame.SetSpeedGame(2);
 		Application.targetFrameRate = 60;
 		if (started)
 		{

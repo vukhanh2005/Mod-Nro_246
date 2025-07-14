@@ -8442,4 +8442,12 @@ public class Char : IMapObject
 		}
 		Res.err("===== tim thay DanhHieu ve danh hieu ra");
 	}
+	public bool getIsPet()
+	{
+		return isPet;
+	}
+	public bool getIsMiniPet()
+	{
+		return isMiniPet;
+	}
 }

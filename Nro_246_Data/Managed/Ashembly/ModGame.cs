@@ -1,3 +1,4 @@
+using Assets.src.g;
 using System;
 using UnityEngine;
 
@@ -56,106 +57,118 @@ public class ModGame
         // GameCanvas.startOKDlg("DEBUG: IsTargetInRange - Distance: " + distance + ", Range: " + (skillRange + buffer) + ", InRange: " + inRange);
         return inRange;
     }
-
     public static void HandleKeyPress(int keyCode)
     {
-        //press m de mo doi khu vuc
-        if (keyCode == 109)
+        if(ChatTextField.gI().isChatting)
         {
-            Service.gI().openUIZone();
+            return;
         }
-        //press k fo tdlt
-        if (keyCode == 107)
+        else
         {
-            if(UseItemAt(521))
+            //press m de mo doi khu vuc
+            if (keyCode == 109)
             {
-                GameScr.isAutoPlay = true;
-                Service.gI().sendPlayerAttack(GameScr.vMob, null, 0);
+                Service.gI().openUIZone(); 
             }
-        }
-        //press a de bat tu dong danh
-        if (keyCode == 97)
-        {
-            isAutoAttackToggled = !isAutoAttackToggled;
+            //press k fo tdlt
+            if (keyCode == 107)
+            {
+                if (UseItemAt(521))
+                {
+                    GameScr.isAutoPlay = true;
+                    Service.gI().sendPlayerAttack(GameScr.vMob, null, 0);
+                }
+            }
+            //press a de bat tu dong danh
+            if (keyCode == 97)
+            {
+                isAutoAttackToggled = !isAutoAttackToggled;
 
-            if (isAutoAttackToggled)
-            {
-                GameScr.info1.addInfo("Đã bật tự động đánh", 0);
+                if (isAutoAttackToggled)
+                {
+                    GameScr.info1.addInfo("Đã bật tự động đánh", 0);
+                }
+                else
+                {
+                    GameScr.info1.addInfo("Đã tắt tự động đánh", 0);
+                }
             }
-            else
+            //press 1 increase speed game
+            if (keyCode == 49)
             {
-                GameScr.info1.addInfo("Đã tắt tự động đánh", 0);
+                currentSpeedGame++;
+                GameScr.info1.addInfo("Game speed: " + currentSpeedGame, 0);
+                if (currentSpeedGame > 5)
+                {
+                    currentSpeedGame = 1;
+                }
+                SetSpeedGame(currentSpeedGame);
             }
-        }
-        //press 1 increase speed game
-        if(keyCode == 49)
-        {
-            currentSpeedGame++;
-            GameScr.info1.addInfo("Game speed: " + currentSpeedGame, 0);
-            if(currentSpeedGame > 5)
+            //press 2 to lock target
+            if (keyCode == 50)
             {
-                currentSpeedGame = 1;
-            }
-            SetSpeedGame(currentSpeedGame);
-        }
-        //press 2 to lock target
-        if(keyCode == 50)
-        {
-            isLocked = !isLocked;
-            if(isLocked == false)
-            {
-                targetLocked_Char = null;
-                targetLocked_Mob = null;
-                return;
-            }
-            targetLocked_Char = Char.myCharz().charFocus;
-            targetLocked_Mob = Char.myCharz().mobFocus;
+                isLocked = !isLocked;
+                if (isLocked == false)
+                {
+                    targetLocked_Char = null;
+                    targetLocked_Mob = null;
+                    return;
+                }
+                targetLocked_Char = Char.myCharz().charFocus;
+                targetLocked_Mob = Char.myCharz().mobFocus;
 
-            if(targetLocked_Char == null && targetLocked_Mob == null)
-            {
-                isLocked = false;
-                return;
+                if (targetLocked_Char == null && targetLocked_Mob == null)
+                {
+                    isLocked = false;
+                    return;
+                }
+                if (targetLocked_Char != null)
+                {
+                    idLocked = Char.myCharz().charFocus.charID;
+                    GameScr.info1.addInfo("Đã khóa: " + targetLocked_Char.cName, 0);
+                }
+                if (targetLocked_Mob != null)
+                {
+                    idLocked = Char.myCharz().charFocus.charID;
+                    GameScr.info1.addInfo("Đã khóa: " + targetLocked_Mob.mobName, 0);
+                }
             }
-            if(targetLocked_Char != null)
+            //press n to auto nhat
+            if (keyCode == 110)
             {
-                idLocked = Char.myCharz().charFocus.charID;
-                GameScr.info1.addInfo("Đã khóa: " + targetLocked_Char.cName, 0);
+                isANhat = !isANhat;
+                if (isANhat)
+                {
+                    GameScr.info1.addInfo("Đã bật auto nhặt", 0);
+                }
+                if (!isANhat)
+                {
+                    GameScr.info1.addInfo("Đã tắt auto nhặt", 0);
+                }
             }
-            if(targetLocked_Mob != null)
+            //press space de an dau than
+            if (keyCode == 32)
             {
-                idLocked = Char.myCharz().charFocus.charID;
-                GameScr.info1.addInfo("Đã khóa: " + targetLocked_Mob.mobName, 0);
+                GameScr.instance.doUseHP();
             }
-        }
-        //press n to auto nhat
-        if(keyCode == 110)
-        {
-            isANhat = !isANhat;
-            if(isANhat)
+            //press c de mo capsule
+            if (keyCode == 99)
             {
-                GameScr.info1.addInfo("Đã bật auto nhặt", 0);
+                if (UseItemAt(193)) //id capsule thuong la 193
+                {
+                    GameScr.info1.addInfo("Đã sử dụng capsu", 0);
+                }
             }
-            if(!isANhat)
+            //press j de xem chieu dai, chieu rong man hinh
+            if (keyCode == 106)
             {
-                GameScr.info1.addInfo("Đã tắt auto nhặt", 0);
-            }
-        }
-        //press space de an dau than
-        if(keyCode == 32)
-        {
-            GameScr.instance.doUseHP();
-        }
-        //press c de mo capsule
-        if(keyCode == 99)
-        {
-            if (UseItemAt(193)) //id capsule thuong la 193
-            {
-                GameScr.info1.addInfo("Đã sử dụng capsu", 0);
+                GameScr.info1.addInfo("Width: " + GameCanvas.w + " Height: " + GameCanvas.h, 0);
             }
         }
     }
     public static void Update()
     {
+        GameCanvas.paintBG = false;
         if (Char.myCharz().isDie)
         {
             if (isAutoAttackToggled)
@@ -187,6 +200,7 @@ public class ModGame
     public static void SetSpeedGame(int speed)
     {
         Time.timeScale = speed;
+        currentSpeedGame = speed;
     }
     public static bool UseItemAt(int id)
     {
@@ -216,7 +230,10 @@ public class ModGame
         }
         return foundItem;
     }
-
+    public static void BuyItem(int id)
+    {
+        Service.gI().buyItem(0, id, 0);
+    }
     public static void PickItem()
     {
         // Nếu không có vật phẩm nào trên bản đồ thì không làm gì cả
@@ -302,6 +319,58 @@ public class ModGame
         else
         {
             GameScr.info1.addInfo("Nothing", 0);
+        }
+    }
+    public static void DrawText(mGraphics g)
+    {
+        DrawVang_Ngoc(g);
+        //DrawInfoNPC(g);
+        DrawInfoMap(g);
+        DrawPlayerInMap(g);
+    }
+    public static void DrawVang_Ngoc(mGraphics g)
+    {
+        int vang = (int)Char.myCharz().xu;
+        int ngoc = (int)Char.myCharz().yen;
+        mFont.tahoma_7_white.drawString(g, "Vàng: " + vang, 100, 100, 0);
+    }
+    public static void DrawInfoNPC(mGraphics g)
+    {
+        for(int i = 0; i < GameScr.vNpc.size(); i++)
+        {
+            Npc npc = (Npc)GameScr.vNpc.elementAt(i);
+            String text = "Name: " + npc.template.name + "(" + npc.template.npcTemplateId + ")";
+            mFont.tahoma_7b_white.drawString(g, text, 100, (i + 1) * 10, 0);
+        }
+    }
+    public static void DrawInfoMap(mGraphics g)
+    {
+        string text = "Map: " + TileMap.mapName + "(" + TileMap.mapID + ")";
+        mFont.tahoma_7b_white.drawString(g, text, 0, 40, 0);
+    }
+    public static void DrawPlayerInMap(mGraphics g)
+    {
+        int currentI = 1;
+        for(int i = 0; i < GameScr.vCharInMap.size(); i++)
+        {
+            currentI++;
+            Char player = (Char)GameScr.vCharInMap.elementAt(i);
+            if(player.getIsMiniPet() || player.getIsPet())
+            {
+                currentI--;
+            }
+            if(!player.getIsMiniPet() && !player.getIsPet()) //không vẽ đệ tử và pet đi theo
+            {
+                string text = player.cName + "(" + player.cHP + ")" + player.cTypePk + "_" + (player.isMob ? "Mob" : "NOT MOB");
+                if (player.cTypePk != 0)
+                {
+                    mFont.tahoma_7_red.drawString(g, text, 390, 50 + (currentI) * 10, 0);
+                }
+                else
+                {
+                    mFont.tahoma_7b_white.drawString(g, text, 390, 50 + (currentI) * 10, 0);
+                }
+            }
         }
     }
 }
