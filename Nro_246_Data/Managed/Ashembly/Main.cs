@@ -85,6 +85,7 @@ public class Main : MonoBehaviour
 	private void Start()
 	{
 		ModGame.SetSpeedGame(2);
+		Char.myCharz().cspeed = 10;
 		Application.targetFrameRate = 60;
 		if (started)
 		{

@@ -3,48 +3,56 @@
   "WorkspaceRootPath": "C:\\Users\\trauv\\Desktop\\Mod-Nro_246\\Nro_246_Data\\Managed\\Ashembly\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\trauv\\desktop\\mod-nro_246\\nro_246_data\\managed\\ashembly\\modgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:modgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\trauv\\desktop\\mod-nro_246\\nro_246_data\\managed\\ashembly\\assets.src.g\\petfollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets.src.g\\petfollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\trauv\\desktop\\mod-nro_246\\nro_246_data\\managed\\ashembly\\gamescr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:gamescr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\trauv\\desktop\\mod-nro_246\\nro_246_data\\managed\\ashembly\\gamecanvas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:gamecanvas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\trauv\\desktop\\mod-nro_246\\nro_246_data\\managed\\ashembly\\char.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:char.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\trauv\\desktop\\mod-nro_246\\nro_246_data\\managed\\ashembly\\tilemap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:tilemap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\trauv\\desktop\\mod-nro_246\\nro_246_data\\managed\\ashembly\\modgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:modgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\trauv\\desktop\\mod-nro_246\\nro_246_data\\managed\\ashembly\\service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\trauv\\desktop\\mod-nro_246\\nro_246_data\\managed\\ashembly\\panel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:panel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\trauv\\desktop\\mod-nro_246\\nro_246_data\\managed\\ashembly\\gamescr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:gamescr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\trauv\\desktop\\mod-nro_246\\nro_246_data\\managed\\ashembly\\itemmap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:itemmap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\trauv\\desktop\\mod-nro_246\\nro_246_data\\managed\\ashembly\\teleport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:teleport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\trauv\\desktop\\mod-nro_246\\nro_246_data\\managed\\ashembly\\controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\trauv\\desktop\\mod-nro_246\\nro_246_data\\managed\\ashembly\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\trauv\\desktop\\mod-nro_246\\nro_246_data\\managed\\ashembly\\chattextfield.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:chattextfield.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\trauv\\desktop\\mod-nro_246\\nro_246_data\\managed\\ashembly\\gamecanvas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:gamecanvas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\trauv\\desktop\\mod-nro_246\\nro_246_data\\managed\\ashembly\\controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\trauv\\desktop\\mod-nro_246\\nro_246_data\\managed\\ashembly\\panel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:panel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\trauv\\desktop\\mod-nro_246\\nro_246_data\\managed\\ashembly\\assets.src.g\\petfollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets.src.g\\petfollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\trauv\\desktop\\mod-nro_246\\nro_246_data\\managed\\ashembly\\itemmap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:itemmap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\trauv\\desktop\\mod-nro_246\\nro_246_data\\managed\\ashembly\\chattextfield.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:chattextfield.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\trauv\\desktop\\mod-nro_246\\nro_246_data\\managed\\ashembly\\assets.src.g\\mabu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -70,43 +78,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PetFollow.cs",
-              "DocumentMoniker": "C:\\Users\\trauv\\Desktop\\Mod-Nro_246\\Nro_246_Data\\Managed\\Ashembly\\Assets.src.g\\PetFollow.cs",
-              "RelativeDocumentMoniker": "Assets.src.g\\PetFollow.cs",
-              "ToolTip": "C:\\Users\\trauv\\Desktop\\Mod-Nro_246\\Nro_246_Data\\Managed\\Ashembly\\Assets.src.g\\PetFollow.cs",
-              "RelativeToolTip": "Assets.src.g\\PetFollow.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-14T07:28:16.035Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Char.cs",
-              "DocumentMoniker": "C:\\Users\\trauv\\Desktop\\Mod-Nro_246\\Nro_246_Data\\Managed\\Ashembly\\Char.cs",
-              "RelativeDocumentMoniker": "Char.cs",
-              "ToolTip": "C:\\Users\\trauv\\Desktop\\Mod-Nro_246\\Nro_246_Data\\Managed\\Ashembly\\Char.cs",
-              "RelativeToolTip": "Char.cs",
-              "ViewState": "AgIAANogAAAAAAAAAAAmwOsgAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-14T07:08:42.332Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "ModGame.cs",
               "DocumentMoniker": "C:\\Users\\trauv\\Desktop\\Mod-Nro_246\\Nro_246_Data\\Managed\\Ashembly\\ModGame.cs",
               "RelativeDocumentMoniker": "ModGame.cs",
               "ToolTip": "C:\\Users\\trauv\\Desktop\\Mod-Nro_246\\Nro_246_Data\\Managed\\Ashembly\\ModGame.cs",
               "RelativeToolTip": "ModGame.cs",
-              "ViewState": "AgIAAFwBAAAAAAAAAAAAwGgBAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAN0AAAAAAAAAAAA5wEEAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-04T00:28:35.872Z",
               "EditorCaption": ""
@@ -114,45 +96,95 @@
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "Teleport.cs",
+              "DocumentMoniker": "C:\\Users\\trauv\\Desktop\\Mod-Nro_246\\Nro_246_Data\\Managed\\Ashembly\\Teleport.cs",
+              "RelativeDocumentMoniker": "Teleport.cs",
+              "ToolTip": "C:\\Users\\trauv\\Desktop\\Mod-Nro_246\\Nro_246_Data\\Managed\\Ashembly\\Teleport.cs",
+              "RelativeToolTip": "Teleport.cs",
+              "ViewState": "AgIAAIwAAAAAAAAAAAAkwJsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-16T14:21:20.885Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TileMap.cs",
+              "DocumentMoniker": "C:\\Users\\trauv\\Desktop\\Mod-Nro_246\\Nro_246_Data\\Managed\\Ashembly\\TileMap.cs",
+              "RelativeDocumentMoniker": "TileMap.cs",
+              "ToolTip": "C:\\Users\\trauv\\Desktop\\Mod-Nro_246\\Nro_246_Data\\Managed\\Ashembly\\TileMap.cs",
+              "RelativeToolTip": "TileMap.cs",
+              "ViewState": "AgIAAF8AAAAAAAAAAAApwGwAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-16T13:41:49.488Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PetFollow.cs",
+              "DocumentMoniker": "C:\\Users\\trauv\\Desktop\\Mod-Nro_246\\Nro_246_Data\\Managed\\Ashembly\\Assets.src.g\\PetFollow.cs",
+              "RelativeDocumentMoniker": "Assets.src.g\\PetFollow.cs",
+              "ToolTip": "C:\\Users\\trauv\\Desktop\\Mod-Nro_246\\Nro_246_Data\\Managed\\Ashembly\\Assets.src.g\\PetFollow.cs",
+              "RelativeToolTip": "Assets.src.g\\PetFollow.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-14T07:28:16.035Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Char.cs",
+              "DocumentMoniker": "C:\\Users\\trauv\\Desktop\\Mod-Nro_246\\Nro_246_Data\\Managed\\Ashembly\\Char.cs",
+              "RelativeDocumentMoniker": "Char.cs",
+              "ToolTip": "C:\\Users\\trauv\\Desktop\\Mod-Nro_246\\Nro_246_Data\\Managed\\Ashembly\\Char.cs",
+              "RelativeToolTip": "Char.cs",
+              "ViewState": "AgIAAKoIAAAAAAAAAAApwL4IAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-14T07:08:42.332Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Service.cs",
               "DocumentMoniker": "C:\\Users\\trauv\\Desktop\\Mod-Nro_246\\Nro_246_Data\\Managed\\Ashembly\\Service.cs",
               "RelativeDocumentMoniker": "Service.cs",
               "ToolTip": "C:\\Users\\trauv\\Desktop\\Mod-Nro_246\\Nro_246_Data\\Managed\\Ashembly\\Service.cs",
               "RelativeToolTip": "Service.cs",
-              "ViewState": "AgIAABoMAAAAAAAAAAAtwHEKAAANAAAAAAAAAA==",
+              "ViewState": "AgIAADoDAAAAAAAAAAAEwIYDAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-14T04:46:20.291Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 7,
               "Title": "Main.cs",
               "DocumentMoniker": "C:\\Users\\trauv\\Desktop\\Mod-Nro_246\\Nro_246_Data\\Managed\\Ashembly\\Main.cs",
               "RelativeDocumentMoniker": "Main.cs",
               "ToolTip": "C:\\Users\\trauv\\Desktop\\Mod-Nro_246\\Nro_246_Data\\Managed\\Ashembly\\Main.cs",
               "RelativeToolTip": "Main.cs",
-              "ViewState": "AgIAAFAAAAAAAAAAAAAAwFcAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAAwFkAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-14T04:34:42.64Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "Panel.cs",
               "DocumentMoniker": "C:\\Users\\trauv\\Desktop\\Mod-Nro_246\\Nro_246_Data\\Managed\\Ashembly\\Panel.cs",
               "RelativeDocumentMoniker": "Panel.cs",
               "ToolTip": "C:\\Users\\trauv\\Desktop\\Mod-Nro_246\\Nro_246_Data\\Managed\\Ashembly\\Panel.cs",
               "RelativeToolTip": "Panel.cs",
-              "ViewState": "AgIAAI8OAAAAAAAAAAApwKAOAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAACkOAAAAAAAAAAAvwFkOAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-14T04:19:20.93Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-14T04:19:20.93Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "ChatTextField.cs",
               "DocumentMoniker": "C:\\Users\\trauv\\Desktop\\Mod-Nro_246\\Nro_246_Data\\Managed\\Ashembly\\ChatTextField.cs",
               "RelativeDocumentMoniker": "ChatTextField.cs",
@@ -164,19 +196,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 6,
               "Title": "Controller.cs",
               "DocumentMoniker": "C:\\Users\\trauv\\Desktop\\Mod-Nro_246\\Nro_246_Data\\Managed\\Ashembly\\Controller.cs",
               "RelativeDocumentMoniker": "Controller.cs",
               "ToolTip": "C:\\Users\\trauv\\Desktop\\Mod-Nro_246\\Nro_246_Data\\Managed\\Ashembly\\Controller.cs",
               "RelativeToolTip": "Controller.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHUAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAK0TAAAAAAAAAAApwLoTAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-02T12:19:18.626Z"
+              "WhenOpened": "2025-07-02T12:19:18.626Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "LoginScr.cs",
               "DocumentMoniker": "C:\\Users\\trauv\\Desktop\\Mod-Nro_246\\Nro_246_Data\\Managed\\Ashembly\\LoginScr.cs",
               "RelativeDocumentMoniker": "LoginScr.cs",
@@ -188,7 +221,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "ServerListScreen.cs",
               "DocumentMoniker": "C:\\Users\\trauv\\Desktop\\Mod-Nro_246\\Nro_246_Data\\Managed\\Ashembly\\ServerListScreen.cs",
               "RelativeDocumentMoniker": "ServerListScreen.cs",
@@ -200,33 +233,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "GameCanvas.cs",
               "DocumentMoniker": "C:\\Users\\trauv\\Desktop\\Mod-Nro_246\\Nro_246_Data\\Managed\\Ashembly\\GameCanvas.cs",
               "RelativeDocumentMoniker": "GameCanvas.cs",
               "ToolTip": "C:\\Users\\trauv\\Desktop\\Mod-Nro_246\\Nro_246_Data\\Managed\\Ashembly\\GameCanvas.cs",
               "RelativeToolTip": "GameCanvas.cs",
-              "ViewState": "AgIAALYAAAAAAAAAAAD4v8QAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAMQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-02T14:14:45.821Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "GameScr.cs",
               "DocumentMoniker": "C:\\Users\\trauv\\Desktop\\Mod-Nro_246\\Nro_246_Data\\Managed\\Ashembly\\GameScr.cs",
               "RelativeDocumentMoniker": "GameScr.cs",
               "ToolTip": "C:\\Users\\trauv\\Desktop\\Mod-Nro_246\\Nro_246_Data\\Managed\\Ashembly\\GameScr.cs",
               "RelativeToolTip": "GameScr.cs",
-              "ViewState": "AgIAALwBAAAAAAAAAAApwMwBAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAEIFAAAAAAAAAAArwFEFAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-03T09:53:53.839Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "Mabu.cs",
               "DocumentMoniker": "C:\\Users\\trauv\\Desktop\\Mod-Nro_246\\Nro_246_Data\\Managed\\Ashembly\\Assets.src.g\\Mabu.cs",
               "RelativeDocumentMoniker": "Assets.src.g\\Mabu.cs",
@@ -238,7 +271,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "Item.cs",
               "DocumentMoniker": "C:\\Users\\trauv\\Desktop\\Mod-Nro_246\\Nro_246_Data\\Managed\\Ashembly\\Item.cs",
               "RelativeDocumentMoniker": "Item.cs",
@@ -250,7 +283,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "ItemMap.cs",
               "DocumentMoniker": "C:\\Users\\trauv\\Desktop\\Mod-Nro_246\\Nro_246_Data\\Managed\\Ashembly\\ItemMap.cs",
               "RelativeDocumentMoniker": "ItemMap.cs",
@@ -258,8 +291,7 @@
               "RelativeToolTip": "ItemMap.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAlwBQAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T02:09:04.752Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-03T02:09:04.752Z"
             }
           ]
         }

@@ -1,6 +1,9 @@
 using Assets.src.g;
 using System;
+using System.Collections.Generic;
 using UnityEngine;
+
+
 
 public class ModGame
 {
@@ -13,9 +16,12 @@ public class ModGame
     public static bool isLocked = false;
     public static bool isANhat = false;
     public static MyVector itemInMap;
-    public static float distancePickItem = 10; //Khoảng cách player sẽ nhặt item
+    public static float distancePickItem = 30; //Khoảng cách player sẽ nhặt item
+    public static bool isBatCo = false;
     private static bool IsTargetInRange(Char attacker, IMapObject target)
     {
+        mFont font = mFont.tahoma_7_white;
+        font.getHeight();
         if (attacker == null || target == null)
         {
             GameCanvas.startOKDlg("DEBUG: IsTargetInRange - attacker or target is null.");
@@ -50,8 +56,8 @@ public class ModGame
         {
             skillRange = attacker.getRangeDamage();
         }
-        
-        int buffer = 24; 
+
+        int buffer = 24;
 
         bool inRange = distance <= skillRange + buffer;
         // GameCanvas.startOKDlg("DEBUG: IsTargetInRange - Distance: " + distance + ", Range: " + (skillRange + buffer) + ", InRange: " + inRange);
@@ -59,16 +65,32 @@ public class ModGame
     }
     public static void HandleKeyPress(int keyCode)
     {
-        if(ChatTextField.gI().isChatting)
+        if (ChatTextField.gI().isChatting)
         {
             return;
         }
         else
         {
+            //bam x de bat co den
+            if (keyCode == 120)
+            {
+                isBatCo = !isBatCo;
+
+                if (isBatCo)
+                {
+                    BatCo(8);
+                    GameScr.info1.addInfo("Đã bật auto bắt cờ", 0);
+                }
+                else
+                {
+                    BatCo(0);
+                    GameScr.info1.addInfo("Đã tắt auto bắt cờ", 0);
+                }
+            }
             //press m de mo doi khu vuc
             if (keyCode == 109)
             {
-                Service.gI().openUIZone(); 
+                Service.gI().openUIZone();
             }
             //press k fo tdlt
             if (keyCode == 107)
@@ -321,6 +343,10 @@ public class ModGame
             GameScr.info1.addInfo("Nothing", 0);
         }
     }
+    public static void BatCo(int idFlag)
+    {
+        Service.gI().getFlag(1, (sbyte)idFlag);
+    }
     public static void DrawText(mGraphics g)
     {
         DrawVang_Ngoc(g);
@@ -336,7 +362,7 @@ public class ModGame
     }
     public static void DrawInfoNPC(mGraphics g)
     {
-        for(int i = 0; i < GameScr.vNpc.size(); i++)
+        for (int i = 0; i < GameScr.vNpc.size(); i++)
         {
             Npc npc = (Npc)GameScr.vNpc.elementAt(i);
             String text = "Name: " + npc.template.name + "(" + npc.template.npcTemplateId + ")";
@@ -351,15 +377,15 @@ public class ModGame
     public static void DrawPlayerInMap(mGraphics g)
     {
         int currentI = 1;
-        for(int i = 0; i < GameScr.vCharInMap.size(); i++)
+        for (int i = 0; i < GameScr.vCharInMap.size(); i++)
         {
             currentI++;
             Char player = (Char)GameScr.vCharInMap.elementAt(i);
-            if(player.getIsMiniPet() || player.getIsPet())
+            if (player.getIsMiniPet() || player.getIsPet())
             {
                 currentI--;
             }
-            if(!player.getIsMiniPet() && !player.getIsPet()) //không vẽ đệ tử và pet đi theo
+            if (!player.getIsMiniPet() && !player.getIsPet()) //không vẽ đệ tử và pet đi theo
             {
                 string text = player.cName + "(" + player.cHP + ")" + player.cTypePk + "_" + (player.isMob ? "Mob" : "NOT MOB");
                 if (player.cTypePk != 0)
