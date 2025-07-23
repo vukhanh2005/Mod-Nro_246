@@ -1,12 +1,12 @@
 using Assets.src.g;
 using System;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
-
-
-
-public class ModGame
+public class ModGame : IActionListener
 {
+    public static int xNew;
+    public static int yNew;
     public static bool isAutoAttackToggled = false;
     public static long lastAttackTime = 0;
     public static int currentSpeedGame = 1;
@@ -18,6 +18,14 @@ public class ModGame
     public static MyVector itemInMap;
     public static float distancePickItem = 30; //Khoảng cách player sẽ nhặt item
     public static bool isBatCo = false;
+
+    public static bool temp = false;
+    public static int endX;
+    public static int endY;
+    public static bool isMovingToTarget = false;
+    public static int targetX;
+    public static int targetY;
+    public static float movementStep = 5f; // Điều chỉnh giá trị này để thay đổi tốc độ di chuyển
     private static bool IsTargetInRange(Char attacker, IMapObject target)
     {
         mFont font = mFont.tahoma_7_white;
@@ -63,6 +71,7 @@ public class ModGame
         // GameCanvas.startOKDlg("DEBUG: IsTargetInRange - Distance: " + distance + ", Range: " + (skillRange + buffer) + ", InRange: " + inRange);
         return inRange;
     }
+
     public static void HandleKeyPress(int keyCode)
     {
         if (ChatTextField.gI().isChatting)
@@ -71,35 +80,19 @@ public class ModGame
         }
         else
         {
-            //bam x de bat co den
-            if (keyCode == 120)
+            if (keyCode == 120) //x
             {
-                isBatCo = !isBatCo;
+                SupportMove.teleportToWpByIndex(0);
+            }
 
-                if (isBatCo)
-                {
-                    BatCo(8);
-                    GameScr.info1.addInfo("Đã bật auto bắt cờ", 0);
-                }
-                else
-                {
-                    BatCo(0);
-                    GameScr.info1.addInfo("Đã tắt auto bắt cờ", 0);
-                }
+            if (keyCode == 112) //p
+            {
+                Service.gI().requestChangeMap();
             }
             //press m de mo doi khu vuc
             if (keyCode == 109)
             {
                 Service.gI().openUIZone();
-            }
-            //press k fo tdlt
-            if (keyCode == 107)
-            {
-                if (UseItemAt(521))
-                {
-                    GameScr.isAutoPlay = true;
-                    Service.gI().sendPlayerAttack(GameScr.vMob, null, 0);
-                }
             }
             //press a de bat tu dong danh
             if (keyCode == 97)
@@ -181,15 +174,11 @@ public class ModGame
                     GameScr.info1.addInfo("Đã sử dụng capsu", 0);
                 }
             }
-            //press j de xem chieu dai, chieu rong man hinh
-            if (keyCode == 106)
-            {
-                GameScr.info1.addInfo("Width: " + GameCanvas.w + " Height: " + GameCanvas.h, 0);
-            }
         }
     }
     public static void Update()
     {
+        GameScr.info1.addInfo("Game tick: " + GameCanvas.gameTick, 0);
         GameCanvas.paintBG = false;
         if (Char.myCharz().isDie)
         {
@@ -347,12 +336,15 @@ public class ModGame
     {
         Service.gI().getFlag(1, (sbyte)idFlag);
     }
-    public static void DrawText(mGraphics g)
+    public static void Draw(mGraphics g)
     {
         DrawVang_Ngoc(g);
         //DrawInfoNPC(g);
         DrawInfoMap(g);
         DrawPlayerInMap(g);
+        DrawPlayerPosition(g);
+        DrawOnPlayer(g);
+        DrawWaypointInMap(g);
     }
     public static void DrawVang_Ngoc(mGraphics g)
     {
@@ -399,4 +391,63 @@ public class ModGame
             }
         }
     }
+    public static void DrawPlayerPosition(mGraphics g)
+    {
+        string text = "X: " + Char.myCharz().cx + " Y: " + Char.myCharz().cy;
+        mFont.tahoma_7b_white.drawString(g, text, 250, 0, 0);
+    }
+    public static void DrawOnPlayer(mGraphics g)
+    {
+        //Vẽ đường kẻ màu đỏ đến boss
+        int x1 = Char.myCharz().cx - GameScr.cmx;
+        int y1 = Char.myCharz().cy - GameScr.cmy;
+        g.setColor(UnityEngine.Color.blue);
+        g.drawLine(x1, y1, x1 + 40, y1);
+        g.drawLine(x1, y1, x1, y1 - 40);
+        //for (int i = 0; i < GameScr.vCharInMap.size(); i++)
+        //{
+        //    Char player = (Char)GameScr.vCharInMap.elementAt(i);
+        //    if (player != null && player.cTypePk == 5)
+        //    {
+        //        int x2 = player.cx - GameScr.cmx;
+        //        int y2 = player.cy - GameScr.cmy;
+        //        g.drawLine(x1, y1, x2, y2);
+        //    }
+        //}
+        //// Draw circle
+        //int centerX = x1;
+        //int centerY = y1;
+        //int radius = Char.myCharz().myskill.dx;
+        //int segments = 160; // More segments = smoother circle
+
+        //for (int j = 0; j < segments; j++)
+        //{
+        //    double angle1 = (double)j / segments * 2.0 * Math.PI;
+        //    double angle2 = (double)(j + 1) / segments * 2.0 * Math.PI;
+
+        //    int p1x = centerX + (int)(radius * Mathf.Cos((float)angle1));
+        //    int p1y = centerY + (int)(radius * Mathf.Sin((float)angle1));
+        //    int p2x = centerX + (int)(radius * Mathf.Cos((float)angle2));
+        //    int p2y = centerY + (int)(radius * Mathf.Sin((float)angle2));
+        //    g.setColor(UnityEngine.Color.blue);
+        //    g.drawLine(p1x, p1y, p2x, p2y);
+        //}
+
+    }
+    public static void DrawWaypointInMap(mGraphics g)
+    {
+        for (int i = 0; i < TileMap.vGo.size(); i++)
+        {
+            Waypoint wp = TileMap.vGo.elementAt(i) as Waypoint;
+            if (wp != null)
+            {
+                g.setColor(UnityEngine.Color.red);
+                g.drawRect(wp.minX - GameScr.cmx, wp.minY - GameScr.cmy, wp.maxX - wp.minX, wp.maxY - wp.minY);
+            }
+        }
+    }
+    public void perform(int idAction, object p)
+    {
+    }
+
 }

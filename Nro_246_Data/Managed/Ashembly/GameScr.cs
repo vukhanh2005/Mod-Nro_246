@@ -2604,7 +2604,7 @@ public class GameScr : mScreen, IChatable
 		return false;
 	}
 
-	private bool checkSkillValid()
+	public bool checkSkillValid()
 	{
 		if (Char.myCharz().myskill != null && ((Char.myCharz().myskill.template.manaUseType != 1 && Char.myCharz().cMP < Char.myCharz().myskill.manaUse) || (Char.myCharz().myskill.template.manaUseType == 1 && Char.myCharz().cMP < Char.myCharz().cMPFull * Char.myCharz().myskill.manaUse / 100)))
 		{
@@ -5384,7 +5384,7 @@ public class GameScr : mScreen, IChatable
 		paint_xp_bar(g);
 		if (!isPaintOther)
 		{
-			ModGame.DrawText(g);
+			ModGame.Draw(g);
 			//if (GameCanvas.open3Hour && TileMap.mapID != 170)
 			//{
 			//	if (GameCanvas.w > 250)

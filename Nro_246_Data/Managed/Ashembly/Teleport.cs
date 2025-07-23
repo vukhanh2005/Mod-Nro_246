@@ -172,54 +172,12 @@ public class Teleport
 
 	public void update()
 	{
-		if (planet > 2 && paintFire && y != -80)
-		{
-			if (isDown && tPrepare == 0)
-			{
-				if (GameCanvas.gameTick % 3 == 0)
-				{
-					ServerEffect.addServerEffect(1, x, y, 1, 0);
-				}
-			}
-			else if (isUp && GameCanvas.gameTick % 3 == 0)
-			{
-				ServerEffect.addServerEffect(1, x, y + 16, 1, 1);
-			}
-		}
-		tFire++;
-		if (tFire > 3)
-		{
-			tFire = 0;
-		}
 		if (isDown)
 		{
-			paintFire = true;
-			painHead = ((type != 0) ? true : false);
-			if (planet < 3)
+			y = y2;
+			if (y % 24 != 0)
 			{
-				int num = y2 - y >> 3;
-				if (num < 1)
-				{
-					num = 1;
-					paintFire = false;
-				}
-				y += num;
-			}
-			else
-			{
-				if (GameCanvas.gameTick % 2 == 0)
-				{
-					vy++;
-				}
-				if (y2 - y < vy)
-				{
-					y = y2;
-					paintFire = false;
-				}
-				else
-				{
-					y += vy;
-				}
+				y -= y % 24;
 			}
 			if (isMe && type == 1 && Char.myCharz().isTeleport)
 			{
@@ -236,124 +194,72 @@ public class Teleport
 				GameScr.findCharInMap(id).cy = y - 30;
 				GameScr.findCharInMap(id).statusMe = 4;
 			}
-			if (Res.abs(y - y2) < 50 && TileMap.tileTypeAt(x, y, 2))
+			tHole = true;
+			if (planet < 3)
 			{
-				tHole = true;
-				if (planet < 3)
-				{
-					SoundMn.gI().pauseAirShip();
-					if (y % 24 != 0)
-					{
-						y -= y % 24;
-					}
-					tPrepare++;
-					if (tPrepare > 10)
-					{
-						tPrepare = 0;
-						isDown = false;
-						isUp = true;
-						paintFire = false;
-					}
-					if (type == 1)
-					{
-						if (isMe)
-						{
-							Char.myCharz().isTeleport = false;
-						}
-						else if (GameScr.findCharInMap(id) != null)
-						{
-							GameScr.findCharInMap(id).isTeleport = false;
-						}
-						painHead = false;
-					}
-				}
-				else
-				{
-					y = y2;
-					if (!isShock)
-					{
-						ServerEffect.addServerEffect(92, x + 4, y + 14, 1, 0);
-						GameScr.shock_scr = 10;
-						isShock = true;
-					}
-					tPrepare++;
-					if (tPrepare > 30)
-					{
-						tPrepare = 0;
-						isDown = false;
-						isUp = true;
-						paintFire = false;
-					}
-					if (type == 1)
-					{
-						if (isMe)
-						{
-							Char.myCharz().isTeleport = false;
-						}
-						else if (GameScr.findCharInMap(id) != null)
-						{
-							GameScr.findCharInMap(id).isTeleport = false;
-						}
-						painHead = false;
-					}
-				}
+				SoundMn.gI().pauseAirShip();
 			}
+			else if (!isShock)
+			{
+				ServerEffect.addServerEffect(92, x + 4, y + 14, 1, 0);
+				GameScr.shock_scr = 10;
+				isShock = true;
+			}
+			if (type == 1)
+			{
+				if (isMe)
+				{
+					Char.myCharz().isTeleport = false;
+				}
+				else if (GameScr.findCharInMap(id) != null)
+				{
+					GameScr.findCharInMap(id).isTeleport = false;
+				}
+				painHead = false;
+			}
+			isDown = false;
+			isUp = true;
+			paintFire = false;
+			tPrepare = 0;
 		}
 		else if (isUp)
 		{
-			tPrepare++;
-			if (tPrepare > 30)
+			if (createShip)
 			{
-				int num2 = y2 + 24 - y >> 3;
-				if (num2 > 30)
-				{
-					num2 = 30;
-				}
-				y -= num2;
-				paintFire = true;
+				SoundMn.gI().resumeAirShip();
 			}
-			else
+			if (type == 0)
 			{
-				if (tPrepare == 14 && createShip)
+				if (isMe)
 				{
-					SoundMn.gI().resumeAirShip();
+					Char.myCharz().isTeleport = false;
+					if (Char.myCharz().statusMe != 14)
+					{
+						Char.myCharz().statusMe = 3;
+					}
+					Char.myCharz().cvy = -3;
 				}
-				if (tPrepare > 0 && type == 0)
+				else if (GameScr.findCharInMap(id) != null)
 				{
-					if (isMe)
+					GameScr.findCharInMap(id).isTeleport = false;
+					if (GameScr.findCharInMap(id).statusMe != 14)
 					{
-						Char.myCharz().isTeleport = false;
-						if (Char.myCharz().statusMe != 14)
-						{
-							Char.myCharz().statusMe = 3;
-						}
-						Char.myCharz().cvy = -3;
+						GameScr.findCharInMap(id).statusMe = 3;
 					}
-					else if (GameScr.findCharInMap(id) != null)
-					{
-						GameScr.findCharInMap(id).isTeleport = false;
-						if (GameScr.findCharInMap(id).statusMe != 14)
-						{
-							GameScr.findCharInMap(id).statusMe = 3;
-						}
-						GameScr.findCharInMap(id).cvy = -3;
-					}
-					painHead = false;
+					GameScr.findCharInMap(id).cvy = -3;
 				}
-				if (tPrepare > 12 && type == 0)
+				painHead = false;
+				if (isMe)
 				{
-					if (isMe)
-					{
-						Char.myCharz().isTeleport = true;
-					}
-					else if (GameScr.findCharInMap(id) != null)
-					{
-						GameScr.findCharInMap(id).cx = x;
-						GameScr.findCharInMap(id).cy = y;
-						GameScr.findCharInMap(id).isTeleport = true;
-					}
-					painHead = true;
+					Char.myCharz().isTeleport = true;
 				}
+				else if (GameScr.findCharInMap(id) != null)
+				{
+					GameScr.findCharInMap(id).cx = x;
+					GameScr.findCharInMap(id).cy = y;
+					GameScr.findCharInMap(id).isTeleport = true;
+				}
+				painHead = true;
 			}
 			if (isMe)
 			{
@@ -367,37 +273,17 @@ public class Teleport
 					GameScr.info1.isUpdate = true;
 				}
 			}
-			if (y <= -80)
+			y = -80;
+			if (isMe && type == 0)
 			{
-				if (isMe && type == 0)
-				{
-					Controller.isStopReadMessage = false;
-					Char.ischangingMap = true;
-				}
-				if (!isMe && GameScr.findCharInMap(id) != null && type == 0)
-				{
-					GameScr.vCharInMap.removeElement(GameScr.findCharInMap(id));
-				}
-				if (planet < 3)
-				{
-					vTeleport.removeElement(this);
-				}
-				else
-				{
-					y = -80;
-					tDelayHole++;
-					if (tDelayHole > 80)
-					{
-						tDelayHole = 0;
-						vTeleport.removeElement(this);
-					}
-				}
+				Controller.isStopReadMessage = false;
+				Char.ischangingMap = true;
 			}
-		}
-		if (paintFire && planet < 3 && Res.abs(y - y2) <= 50 && GameCanvas.gameTick % 5 == 0)
-		{
-			Effect me = new Effect(19, x, y2 + 20, 2, 1, -1);
-			EffecMn.addEff(me);
+			if (!isMe && GameScr.findCharInMap(id) != null && type == 0)
+			{
+				GameScr.vCharInMap.removeElement(GameScr.findCharInMap(id));
+			}
+			vTeleport.removeElement(this);
 		}
 	}
 }
