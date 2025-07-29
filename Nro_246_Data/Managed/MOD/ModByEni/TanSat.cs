@@ -10,30 +10,29 @@ public class TanSat
     public static List<Mob> list;
     public static long      lastTimeDoubleClick = 0;
     public static int       currentZoneID       = -1;
-    public static void Auto()
+    public static void AutoTanSat(List<int> listId)
     {
-        if (Data.isAutoNhat && (AutoNhat.isMovingToItem == true || AutoNhat.list.Count() > 0))
+        if(AutoPick.isMovingToItem || Char.myCharz().isDie || AutoPick.target != null || AutoPick.list.Count > 0)
         {
-            target = null;
-            Char.myCharz().mobFocus = null;
-            return; //Nếu đang nhặt đồ thì không đánh quái
+            return;
         }
-        target = FindMob();
+        target = FindMob(listId);
         if (target == null)
         {
             return; //Hết quái để đập
         }
-        if (target != null)
+        if (target != null && !target.injureThenDie)
         {
-            if (Res.distance(Char.myCharz().cx, Char.myCharz().cy, target.x, target.y) >= 50)
+            SPC.chat("Current target: " + target.getTemplate().name);
+            if (Res.distance(Char.myCharz().cx, 0, target.x, 0) > 50)
             {
                 isMovingToMob = true;
                 SupportMoving.MoveTo(target.x, target.y);
             }
-            if (Res.distance(Char.myCharz().cx, Char.myCharz().cy, target.x, target.y) < 50)
+            if (Res.distance(Char.myCharz().cx, 0, target.x, 0) <= 50)
             {
                 isMovingToMob = false;
-                if (mSystem.currentTimeMillis() - lastTimeDoubleClick >= 200)
+                if (mSystem.currentTimeMillis() - lastTimeDoubleClick >= 300)
                 {
                     Char.myCharz().mobFocus = target;
                     GameScr.gI().doDoubleClickToObj(target);
@@ -42,21 +41,38 @@ public class TanSat
             }
         }
     }
-    public static Mob FindMob()
+    public static Mob FindMob(List<int> listId)
     {
         Mob result = null;
 
         //Thêm mob đủ tiêu chuẩn để đánh vào list
         list = new List<Mob>();
-        for (int i = 0; i < GameScr.vMob.size(); i++)
+        if(listId != null)
         {
-            Mob mob = GameScr.vMob.elementAt(i) as Mob;
-            if (mob != null && mob.injureThenDie == false) 
+            for (int i = 0; i < GameScr.vMob.size(); i++)
             {
-                list.Add(mob);
+                Mob mob = GameScr.vMob.elementAt(i) as Mob;
+                if (mob != null && mob.injureThenDie == false && !mob.isMobMe && listId.Contains(mob.templateId))
+                {
+                    list.Add(mob);
+                }
             }
         }
-
+        else if(listId == null)
+        {
+            for (int i = 0; i < GameScr.vMob.size(); i++)
+            {
+                Mob mob = GameScr.vMob.elementAt(i) as Mob;
+                if (mob != null && mob.injureThenDie == false && !mob.isMobMe)
+                {
+                    list.Add(mob);
+                }
+            }
+        }
+        if (list.Count == 0)
+        {
+            return null;
+        }
         //Tìm mob gần nhất
         int distanceMin = int.MaxValue;
         foreach (Mob mob in list)

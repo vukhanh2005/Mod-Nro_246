@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public class AutoNhat
+public class AutoPick
 {
     public static bool          isMovingToItem          = false;
     public static ItemMap       target                  = null;
-    public static List<ItemMap> list;
+    public static List<ItemMap> list = new List<ItemMap>();
     public static long          lastTimeRequestPickItem = 0;
 
-    public static void Auto()
+    public static void AutoPickItem()
     {
         target = FindItem();
         if(list.Count() == 0)
@@ -53,6 +53,10 @@ public class AutoNhat
             {
                 list.Add(item);
             }
+        }
+        if(list.Count() == 0)
+        {
+            return null;
         }
         //Tìm item gần nhất
         int distanceMin = int.MaxValue;

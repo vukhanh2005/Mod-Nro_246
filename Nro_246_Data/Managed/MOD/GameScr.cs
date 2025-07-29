@@ -4731,7 +4731,7 @@ public class GameScr : mScreen, IChatable
 
 	public override void update()
 	{
-		MobController.update();
+		Mod_Manager.Update();
         if (GameCanvas.keyPressed[16])
 		{
 			GameCanvas.keyPressed[16] = false;
@@ -5593,6 +5593,7 @@ public class GameScr : mScreen, IChatable
 			string text = mResources.WAIT + "  " + nUSER_CT + "/" + nUSER_MAX_CT;
 			mFont.tahoma_7b_dark.drawString(g, mResources.WAIT + "  " + nUSER_CT + "/" + nUSER_MAX_CT, GameCanvas.w - 10, 40, 1);
 		}
+		
 	}
 
 	private void paintXoSo(mGraphics g)
@@ -6977,6 +6978,7 @@ public class GameScr : mScreen, IChatable
 
 	public void actionPerform(int idAction, object p)
 	{
+		Mod_Menu.perform(idAction, p);
 		Cout.println("PERFORM WITH ID = " + idAction);
 		switch (idAction)
 		{

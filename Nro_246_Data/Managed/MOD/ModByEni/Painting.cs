@@ -8,9 +8,14 @@ public class Painting
 {
     public static void update(mGraphics g)
     {
-        PaintInfoItemInBag(g);
+        PaintInfoMap(g);
+        //PaintInfoItemInBag(g);
         //PaintInfoMobInMap(g);
         //PaintNpcInfo(g);
+    }
+    public static void PaintInfoMap(mGraphics g)
+    {
+        mFont.tahoma_7_blue1.drawString(g, "Map: " + TileMap.mapName + "(" + TileMap.mapID + ")", 250, 0, 0);
     }
     public static void PaintInfoItemInBag(mGraphics g)
     {
@@ -47,12 +52,11 @@ public class Painting
                 {
                     int x = startX + col * colWidth;
                     int y = row * lineHeight;
-                    mFont.tahoma_7b_white.drawString(g, item.template.name + $" ID:{item.template.id} T:{item.template.type}", x, y, 0);
+                    mFont.tahoma_7b_white.drawString(g, item.template.name + " ", x, y, 0);
                 }
             }
         }
     }
-
     public static void PaintInfoMobInMap(mGraphics g)
     {
         int currI = 0;

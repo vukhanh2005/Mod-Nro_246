@@ -11,7 +11,7 @@ public class AutoBanDo
     {
         if (mSystem.currentTimeMillis() - lastTimeBanDo > speed)
         {
-            int itemIndex = GetItemIndex(new int[] {1, 22, 7, 225, 28, 12});
+            int itemIndex = GetItemIndex(new int[] {1, 22, 7, 225, 28, 12, 41, 46});
             if (itemIndex >= 0)
             {
                 Service.gI().saleItem(0, 1, (short)itemIndex);
@@ -25,7 +25,7 @@ public class AutoBanDo
         for (int i = 0; i < Char.myCharz().arrItemBag.Count(); i++)
         {
             Item item = Char.myCharz().arrItemBag[i];
-            if (item != null && idItem.Contains(item.template.id))
+            if (item != null && idItem.Contains(item.template.id) && item.itemOption.Length <= 1)
             {
                 return i;
             }

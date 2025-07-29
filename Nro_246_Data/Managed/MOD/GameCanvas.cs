@@ -1992,7 +1992,7 @@ public class GameCanvas : IActionListener
 
 	public void mapKeyPress(int keyCode)
 	{
-		HandleKeyPress.update();
+		Handle_KeyPress.update();
 		if (currentDialog != null)
 		{
 			currentDialog.keyPress(keyCode);
