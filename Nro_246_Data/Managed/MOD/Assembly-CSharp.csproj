@@ -16,6 +16,6 @@
     </Reference>
   </ItemGroup>
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="copy &quot;$(TargetPath)&quot; &quot;C:\Users\nguye\Desktop\NVK\Mod-Nro_246\Nro_246_Data\Managed&quot;" />
+    <Exec Command="copy &quot;$(TargetPath)&quot; &quot;C:\Users\nguye\Desktop\NVK\Game\Mod-Nro_246\Nro_246_Data\Managed&quot;" />
   </Target>
 </Project>

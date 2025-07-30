@@ -7,6 +7,7 @@ using System.Threading;
 public class Mod_Manager
 {
     public static List<int> listIdMob;
+    public static int[] bestWay;
     public static void Update()
     {
         if(Data.isAutoTrain)
@@ -16,6 +17,10 @@ public class Mod_Manager
         if(Data.isAutoPick)
         {
             AutoPick.AutoPickItem();
+        }
+        if(Data.isAutoMap)
+        {
+            SupportGoMap.go();
         }
     }
 }

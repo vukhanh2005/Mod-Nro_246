@@ -9,13 +9,15 @@ public class Painting
     public static void update(mGraphics g)
     {
         PaintInfoMap(g);
+        //PaintWaypointInfo(g);
+        //PaintPlayerPosition(g);
         //PaintInfoItemInBag(g);
         //PaintInfoMobInMap(g);
         //PaintNpcInfo(g);
     }
     public static void PaintInfoMap(mGraphics g)
     {
-        mFont.tahoma_7_blue1.drawString(g, "Map: " + TileMap.mapName + "(" + TileMap.mapID + ")", 250, 0, 0);
+        mFont.tahoma_7_blue1.drawString(g, "Map: " + TileMap.mapName + "(" + TileMap.mapID + ")" + "(" + TileMap.planetID + ")", 250, 0, 0);
     }
     public static void PaintInfoItemInBag(mGraphics g)
     {
@@ -40,7 +42,7 @@ public class Painting
 
         // Vẽ thông tin dạng 2 cột
         int startX = 120;
-        int colWidth = 150;
+        int colWidth = 50;
         int lineHeight = 10;
 
         for (int row = 0; row < list.Length; row++)
@@ -80,6 +82,26 @@ public class Painting
             if (npc != null)
             {
                 mFont.tahoma_7b_white.drawString(g, npc.template.name + " ID: " + npc.template.npcTemplateId, 100, i * 10, 0);
+            }
+        }
+    }
+    public static void PaintPlayerPosition(mGraphics g)
+    {
+        if (Char.myCharz() != null)
+        {
+            mFont.tahoma_7b_white.drawString(g, "X: " + Char.myCharz().cx + " Y: " + Char.myCharz().cy, 200, 200, 0);
+        }
+    }
+    public static void PaintWaypointInfo(mGraphics g)
+    {
+        for(int i = 0; i < TileMap.vGo.size(); i++)
+        {
+            Waypoint waypoint = TileMap.vGo.elementAt(i) as Waypoint;
+            if (waypoint != null)
+            {
+                string info = "Waypoint: " + waypoint.minX + ", " + waypoint.minY + " - " + waypoint.maxX + ", " + waypoint.maxY + i;
+
+                mFont.tahoma_7b_white.drawString(g, info, 100, i * 10, 0);
             }
         }
     }

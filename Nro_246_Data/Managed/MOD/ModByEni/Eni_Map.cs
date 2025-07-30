@@ -5,20 +5,15 @@ using System.Text;
 
 public class Eni_Map
 {
-    string nameMap;
-    int currentMapID;
-    int nextMapID;
-    int prevMapID;
-    int midMapID;
-
-    public Waypoint nextWP;
-    public Waypoint prevWP;
-    public Waypoint midWP;
-    public Eni_Map(int currentMapID, int nextMapID, int prevMapID, int midMapID)
+    public int mapID;
+    public string mapName;
+    public int planetID;
+    public Dictionary<int, int> listWaypoint;
+    public Eni_Map(int mapID, Dictionary<int, int> listWaypoint, string mapName, int planetID)
     {
-        this.currentMapID = currentMapID;
-        this.nextMapID = nextMapID;
-        this.prevMapID = prevMapID;
-        this.midMapID = midMapID;
+        this.mapID = mapID;
+        this.listWaypoint = listWaypoint;
+        this.mapName = mapName;
+        this.planetID = planetID;
     }
 }

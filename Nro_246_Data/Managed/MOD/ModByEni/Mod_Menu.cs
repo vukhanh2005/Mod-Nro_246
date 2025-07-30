@@ -7,7 +7,6 @@ public class Mod_Menu
 {
     public MyVector listCommand;
     public static List<int> listId;
-    
     public Mod_Menu()
     {
         listCommand = new MyVector();
@@ -28,6 +27,73 @@ public class Mod_Menu
 
     public static void perform(int idAction, object p)
     {
+        //241120050 Map
+        if(idAction == 241120050)
+        {
+            Mod_Menu listMenu = new Mod_Menu();
+            listMenu.addCommand(new Command("Trái Đất", 112233, null));
+            listMenu.addCommand(new Command("Namek", 112234, null));
+            listMenu.addCommand(new Command("Xayda", 112235, null));
+            listMenu.show();
+        }
+        //Trái đất : 112233
+        if(idAction == 112233)
+        {
+            Mod_Menu listMenu = new Mod_Menu();
+            for(int i = 0; i < Data.listMap.list.Count; i++)
+            {
+                if (Data.listMap.list[i].planetID == 0)
+                {
+                    listMenu.addCommand(new Command(Data.listMap.list[i].mapName, Data.listMap.list[i].mapID + 999888, null));
+                }
+            }
+            listMenu.show();
+        }
+        //Namek : 112234
+        if (idAction == 112234)
+        {
+            Mod_Menu listMenu = new Mod_Menu();
+
+            for (int i = 0; i < Data.listMap.list.Count; i++)
+            {
+                if (Data.listMap.list[i].planetID == 1)
+                {
+                    listMenu.addCommand(new Command(Data.listMap.list[i].mapName, Data.listMap.list[i].mapID + 999888, null));
+                }
+            }
+            listMenu.show();
+        }
+        //Xayda : 112235
+        if (idAction == 112235)
+        {
+            Mod_Menu listMenu = new Mod_Menu();
+
+            for (int i = 0; i < Data.listMap.list.Count; i++)
+            {
+                if (Data.listMap.list[i].planetID == 2)
+                {
+                    listMenu.addCommand(new Command(Data.listMap.list[i].mapName, Data.listMap.list[i].mapID + 999888, null));
+                }
+            }
+            listMenu.show();
+        }
+        for(int i = 0; i < Data.listMap.list.Count; i++)
+        {
+            //Chuyen den map
+            if (idAction == Data.listMap.list[i].mapID + 999888)
+            {
+                GraphMap graphMap = new GraphMap();
+                Mod_Manager.bestWay = graphMap.FindBestWay(TileMap.mapID, Data.listMap.list[i].mapID);
+                SupportGoMap.init(Mod_Manager.bestWay);
+                string result = "";
+                for(int j = 0; j < Mod_Manager.bestWay.Length; j++)
+                {
+                    result += Mod_Manager.bestWay[j] + " ";
+                }
+                SPC.chat("Đường đi: " + result);
+                Data.isAutoMap = true;
+            }
+        }
         //Tan sat
         if (idAction == 241120051)
         {
@@ -47,6 +113,7 @@ public class Mod_Menu
         {
             Data.isAutoPick = !Data.isAutoPick;
         }
+        //Go Map
         //Off training
         if( idAction == 20052001)
         {
@@ -83,7 +150,7 @@ public class Mod_Menu
             }
             else if (mobFocus == null)
             {
-                SPC.chat("Chưa focus nào");
+                SPC.chat("Chưa focus mob nào");
             }
             else if (listId.Contains(mobFocus.templateId))
             {
@@ -96,7 +163,7 @@ public class Mod_Menu
             listId.Clear();
             SPC.chat("Đã xóa danh sách ID");
         }
-    }
+}
     public void show()
     {
         if ((listCommand == null))
